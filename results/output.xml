@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.0 (Python 3.9.1 on win32)" generated="20210329 23:34:48.536" rpa="false" schemaversion="2">
+<suite id="s1" name="Testlogin" source="C:\Users\Юлия\PycharmProjects\testProject\Testcase\Testlogin.robot">
+<test id="s1-t1" name="Login aihitdata">
+<kw name="Open aihitdata by Chrome">
+<kw name="Open Browser" library="Selenium2Library">
+<arg>https://www.aihitdata.com/login?next=https%3A//www.aihitdata.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210329 23:34:49.543" level="INFO">Opening browser 'chrome' to base url 'https://www.aihitdata.com/login?next=https%3A//www.aihitdata.com/'.</msg>
+<status status="PASS" starttime="20210329 23:34:49.541" endtime="20210329 23:34:55.705"/>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210329 23:34:55.705" endtime="20210329 23:34:55.852"/>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<arg>Log in</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20210329 23:34:55.852" endtime="20210329 23:34:55.873"/>
+</kw>
+<status status="PASS" starttime="20210329 23:34:49.541" endtime="20210329 23:34:55.873"/>
+</kw>
+<kw name="Log in aihitdata">
+<arg>username</arg>
+<arg>password</arg>
+<kw name="Input Text" library="Selenium2Library">
+<arg>email</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210329 23:34:55.876" level="INFO">Typing text 'username' into text field 'email'.</msg>
+<status status="PASS" starttime="20210329 23:34:55.874" endtime="20210329 23:34:56.081"/>
+</kw>
+<kw name="Input Password" library="Selenium2Library">
+<arg>password</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20210329 23:34:56.082" level="INFO">Typing password into text field 'password'.</msg>
+<msg timestamp="20210329 23:34:56.128" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20210329 23:34:56.184" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20210329 23:34:56.081" endtime="20210329 23:34:56.184"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210329 23:35:01.185" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210329 23:34:56.184" endtime="20210329 23:35:01.185"/>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210329 23:35:01.186" endtime="20210329 23:35:03.374"/>
+</kw>
+<status status="PASS" starttime="20210329 23:34:55.874" endtime="20210329 23:35:03.375"/>
+</kw>
+<tag>Smoke</tag>
+<status status="PASS" starttime="20210329 23:34:49.539" endtime="20210329 23:35:03.376"/>
+</test>
+<test id="s1-t2" name="printing variable on console">
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Variable1}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210329 23:35:03.384" endtime="20210329 23:35:03.386"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Variable2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210329 23:35:03.387" endtime="20210329 23:35:03.389"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${Variable1}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20210329 23:35:03.392" level="INFO">'Printing variable V1'</msg>
+<status status="PASS" starttime="20210329 23:35:03.391" endtime="20210329 23:35:03.392"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${Variable2}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20210329 23:35:03.491" level="INFO">'Printing variable V2'</msg>
+<status status="PASS" starttime="20210329 23:35:03.490" endtime="20210329 23:35:03.491"/>
+</kw>
+<tag>Smoke</tag>
+<status status="PASS" starttime="20210329 23:35:03.381" endtime="20210329 23:35:03.493"/>
+</test>
+<doc>A simple example to launching aihitdata url and login</doc>
+<status status="PASS" starttime="20210329 23:34:48.540" endtime="20210329 23:35:03.505"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="2" fail="0" skip="0">Smoke</stat>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Testlogin">Testlogin</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
