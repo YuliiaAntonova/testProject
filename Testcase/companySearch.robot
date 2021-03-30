@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation  Create a simple test script to validate, the user is able to search product on ebay.com\n
+Documentation  Create a simple test script to validate, the user is able to search product on website
 ...  [TC01] Launch Website and search a company\n
 ...  [TC02] Verify that application is able to fetch the search results
 Library  Selenium2Library
